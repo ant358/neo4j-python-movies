@@ -42,3 +42,9 @@ export FLASK_APP=api
 export FLASK_ENV=development
 flask run
 
+Steps:
+
+Changed the .env to the temporay sandbox values for the tutorial
+restarted flask
+Installed neo4j Driver
+added neo4j to requirements.txt
