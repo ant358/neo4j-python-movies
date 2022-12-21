@@ -9,6 +9,8 @@ from neo4j import GraphDatabase
 Initiate the Neo4j Driver
 """
 # tag::initDriver[]
+
+
 def init_driver(uri, username, password):
     # TODO: Create an instance of the driver here
     current_app.driver = GraphDatabase.driver(uri, auth=(username, password))
@@ -25,6 +27,8 @@ def init_driver(uri, username, password):
 Get the instance of the Neo4j Driver created in the `initDriver` function
 """
 # tag::getDriver[]
+
+
 def get_driver():
     return current_app.driver
 
@@ -36,8 +40,10 @@ If the driver has been instantiated, close it and all remaining open sessions
 """
 
 # tag::closeDriver[]
+
+
 def close_driver():
-    if current_app.driver != None:
+    if current_app.driver is not None:
         current_app.driver.close()
         current_app.driver = None
 
