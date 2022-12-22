@@ -1,5 +1,6 @@
 [style]
 based_on_style = yapf
+column_limit = 79
 indent_width = 4
-column_limit = 88
-indent_closing_brackets = True
+spaces_before_comment = 4
+split_before_logical_operator = true

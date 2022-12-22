@@ -44,7 +44,10 @@ flask run
 
 Steps:
 
-Changed the .env to the temporay sandbox values for the tutorial
-restarted flask
-Installed neo4j Driver
-added neo4j to requirements.txt
+Changed the .env to the temporay sandbox values for the tutorial  
+restarted flask  
+Installed neo4j Driver  
+added neo4j to requirements.txt  
+
+Notes:  
+Double curly brackets are required in python strings to escape the single pair required by cypher.
