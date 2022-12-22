@@ -1,0 +1,5 @@
+[style]
+based_on_style = yapf
+indent_width = 4
+column_limit = 88
+indent_closing_brackets = True
